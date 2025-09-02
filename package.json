@@ -1,0 +1,17 @@
+{
+  "name": "lead-import",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "import": "node src/index.mjs data/leads.json",
+    "import:sample": "node src/index.mjs data/leads.sample.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^17.2.2"
+  }
+}
