@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "import": "node src/index.mjs data/leads.json",
-    "import:sample": "node src/index.mjs data/leads.sample.json"
+    "import:sample": "node src/index.mjs data/leads.sample.json",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest",
+    "test:watch": "node --experimental-vm-modules node_modules/.bin/jest --watch"
   },
   "keywords": [],
   "author": "",
@@ -13,5 +15,9 @@
   "type": "module",
   "dependencies": {
     "dotenv": "^17.2.2"
+  },
+  "devDependencies": {
+    "@jest/globals": "^30.1.2",
+    "jest": "^30.1.3"
   }
 }
